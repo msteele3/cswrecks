@@ -119,20 +119,21 @@ export default function HomePage() {
         className="w-full max-w-4xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-y-4 text-center"
       >
         {filteredSites.map((site) => (
-          <motion.a
-            key={site.website}
-            variants={item}
-            href={site.website.replace(/\/$/, "")}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`text-sm transition-colors duration-200
-              ${isDark 
-                ? "text-gray-500 hover:text-gray-300" 
-                : `text-gray-600 hover:text-[${gtColors.navy}]`
-              }`}
-          >
-            {site.website.replace('https://', '').replace('http://', '').replace(/\/$/, "")}
-          </motion.a>
+         <motion.a
+         whileHover={{ scale: 1.2, transition: { duration: 0.25, ease: "easeInOut" } }}
+         key={site.website}
+         variants={item}
+         href={site.website.replace(/\/$/, "")}
+         target="_blank"
+         rel="noopener noreferrer"
+         className={`inline-block text-sm
+           ${isDark 
+             ? "text-gray-500 hover:text-gray-300" 
+             : `text-gray-600 hover:text-[${gtColors.navy}]`
+           }`}
+       >
+         {site.website.replace('https://', '').replace('http://', '').replace(/\/$/, "")}
+       </motion.a>
         ))}
       </motion.div>
 
