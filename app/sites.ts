@@ -33,6 +33,11 @@ export interface Site {
         website: "https://www.bluehandcoding.com/"
       },
       {
+        name: "Austin Morris",
+        year: 2024,
+        website: "https://www.auwimo.com/"
+      },
+      {
         name: "Aidan Pratt",
         year: 2025,
         website: "https://aidanpratt.com/"
