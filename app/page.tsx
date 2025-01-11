@@ -54,7 +54,7 @@ export default function HomePage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       style={{ fontFamily: "'Nova Square', sans-serif" }}
-      className="min-h-screen p-8 flex flex-col items-center bg-navy text-white transition-colors duration-300"
+      className="min-h-screen p-8 flex flex-col items-center bg-black text-white transition-colors duration-300"
     >
       <section
         style={{ height: "25vh" }}
@@ -130,7 +130,7 @@ export default function HomePage() {
         ))}
       </motion.div>
 
-      <footer className="relative bottom-0 mt-12">
+      <footer className="absolute bottom-8 mt-12">
         <motion.button
           whileHover={{
             scale: 1.15,
