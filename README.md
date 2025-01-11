@@ -1,5 +1,8 @@
 # cswrecks
 
+![CS Wrecks Logo](https://www.cswrecks.com/cswrecks-logo.png)
+
+
 **cswrecks** is a webring for **Computer Science students** at Georgia Tech.
 
 ---
