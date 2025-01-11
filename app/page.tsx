@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Site, allSites } from "./sites";
-import Image from "next/image";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");
@@ -17,10 +16,9 @@ export default function HomePage() {
     );
   });
 
-  // We want every odd row to have fewer items, and every even row to have more.
-  // For example, row sizes of [3, 4] repeated:
+
   function chunkSites(sites: Site[]) {
-    const chunkPattern = [4, 5]; // you can adjust these to your preference
+    const chunkPattern = [4, 5]; 
     const result: Site[][] = [];
     let index = 0;
     let i = 0;
@@ -56,12 +54,10 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      // Hardcode the dark classes:
-      // Also apply Nova Square font site-wide.
+
       style={{ fontFamily: "'Nova Square', sans-serif" }}
       className="min-h-screen p-8 flex flex-col items-center bg-navy text-white transition-colors duration-300"
     >
-      {/* Hero Section (top ~25% of the page) */}
       <section
         style={{ height: "25vh" }}
         className="w-full flex flex-col items-center justify-center text-center px-4"
@@ -72,7 +68,6 @@ export default function HomePage() {
         </p>
       </section>
 
-      {/* Search Box */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -85,7 +80,6 @@ export default function HomePage() {
             placeholder="search by name, site, or year"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            // Hardcode dark classes here:
             className="w-full px-8 py-2 focus:outline-none text-sm border-b transition-colors duration-300 bg-black border-gray-700 text-gray-300 placeholder-gray-600"
           />
           <div className="absolute left-0 top-2.5">
@@ -102,7 +96,6 @@ export default function HomePage() {
         </div>
       </motion.div>
 
-      {/* Sites List with alternating row lengths */}
       <motion.div
         variants={container}
         initial="hidden"
@@ -135,7 +128,6 @@ export default function HomePage() {
       </motion.div>
 
       <footer className="absolute bottom-10 justify-center mt-12">
-        {/* Add Site Button */}
         <motion.button
          whileHover={{
           scale: 1.15,
