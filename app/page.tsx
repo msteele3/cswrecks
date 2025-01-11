@@ -115,7 +115,7 @@ export default function HomePage() {
                 href={site.website.replace(/\/$/, "")}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block text-sm text-gray-500 hover:text-gray-300"
+                className="inline-block text-sm text-gray-300 hover:text-gray-100"
               >
                 {site.website
                   .replace("https://", "")
@@ -136,7 +136,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={() => window.open("https://github.com/msteele3/cswrecks/pulls", "_blank")}
-          className="text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-gray-600 hover:text-gray-400 border-gray-800"
+          className="text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-white border-gray-800"
         >
           add your site →
         </motion.button>
