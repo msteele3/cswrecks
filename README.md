@@ -48,9 +48,9 @@ To add your website to **cswrecks**, you must be:
      link: "https://mattsteele.co"
    },
    {
-     name: "Ananth V",
+     name: "Ananth Vivekanand",
      year: 2025,
-     link: "https://ananth.dev"
+     link: "https://ananthvivekanand.com"
    }
 
 
