@@ -19,14 +19,14 @@ export const metadata: Metadata = {
   description: "Unofficial Georgia Tech CS Student Portfolio Directory",
   openGraph: {
     title: "CSWrecks Directory",
-    description: "Unofficial List of Georgia Tech CS Student Portfolios",
-    url: "https://your-site.com",
+    description: "Unofficial Directory of Georgia Tech CS Student Portfolios",
+    url: "https://cswrecks.com",
     siteName: "CSWrecks",
     images: [
       {
-        url: "https://your-site.com/og-image.jpg",
-        width: 1200,
-        height: 630,
+        url: "/cswrecks-logo.png",
+        width: 400,
+        height: 300,
       },
     ],
     locale: "en_US",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CSWrecks Directory",
     description: "List of Georgia Tech CS Student Portfolios",
-    images: ["https://your-site.com/og-image.jpg"],
+    images: ["/cswrecks-logo.png"],
   },
 };
 
