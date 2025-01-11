@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# cswrecks
 
-## Getting Started
+**cswrecks** is a webring for **Computer Science students** at Georgia Tech.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Table of Contents
+- [What's a webring?](#whats-a-webring)
+- [How do I join?](#how-do-i-join)
+- [Credits](#credits)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## What's a webring?
+A webring is a group of websites linked together in a circular or “ring” format, typically centered around a common theme. This was popular in the 90s to increase site discoverability. Here, **cswrecks** aims to spotlight personal websites, blogs, or portfolios of Georgia Tech CS students and alumni. By joining, we can all discover each other's work and bring more traffic to our personal websites.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How do I join?
+To add your website to **cswrecks**, you must be:
+- A **current student** or an **alum** of the [Georgia Tech College of Computing](https://www.cc.gatech.edu/) or be a GT Student/Alum heavily involved in hardware/software dev.
+- Committed to maintaining a personal website/portfolio (nothing inappropriate, please!).
 
-## Learn More
+### Steps
+1. **Fork this repository** and clone it to your local machine.
+2. **Create a new branch** (e.g., `add-your-name`).
+3. Add your site details to the **`sites.ts`** file at the end of the `allSites` array, for example:
+   ```js
+   {
+     name: "Your Name",
+     year: 20XX, // e.g., graduation year
+     website: "https://your-cool-site.com"
+   }
+4. **Open a pull request** on this repo. In the PR description:
+   - Include your **full name**,
+   - Your **graduation year** (or expected graduation),
+   - Your **full website URL**,
+   - A link to **another online profile** (e.g., your LinkedIn or GitHub) to help verify your identity.
 
-To learn more about Next.js, take a look at the following resources:
+5. **Wait for approval**. We’ll verify that you meet the criteria before merging.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+6. **Example site entry**:
+   ```js
+   {
+     name: "Matt Steele",
+     year: 2025,
+     link: "https://mattsteele.co"
+   },
+   {
+     name: "Ananth V",
+     year: 2025,
+     link: "https://ananth.dev"
+   }
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+### Linking back
+It’s highly encouraged to link back to the main site [cswrecks](https://cswrecks.com) on your own website. You can:
+- Add a simple text link: `[cswrecks](https://cswrecks.com)`.
+- Or link to the *previous* and *next* members in the ring (once you know who they are!).
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+By doing so, we keep the ring cohesive and help each other get discovered.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
+## Credits
+**cswrecks** was [Matt Steele](https://www.mattsteele.co/) with the help and inspiration of [Ananth Vivekanand](https://ananthvivekanand.com/)
+
+> **Inspiration**: This project was inspired by and adapted design elements and instructions from [SE Webring](https://se-webring.xyz).
