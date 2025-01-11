@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CSWrecks",
+  title: "CS Wrecks",
   description: "Unofficial Georgia Tech CS Student Portfolio Directory",
   openGraph: {
     title: "CSWrecks Directory",
