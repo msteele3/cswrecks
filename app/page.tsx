@@ -120,6 +120,8 @@ export default function HomePage() {
                 {site.website
                   .replace("https://", "")
                   .replace("http://", "")
+                  .replace(/^www\./, "")
+
                   .replace(/\/$/, "")}
               </motion.a>
             ))}

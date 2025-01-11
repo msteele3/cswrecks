@@ -20,7 +20,7 @@ export interface Site {
       {
         name: "Ananth Vivekanand",
         year: 2025,
-        website: "https://ananthvivekanand.com/",
+        website: "https://www.ananthvivekanand.com/",
       },
       {
         name: "Alex Wang",
@@ -40,6 +40,6 @@ export interface Site {
       {
         name: "Aidan Pratt",
         year: 2025,
-        website: "https://aidanpratt.com/"
+        website: "https://www.aidanpratt.com/"
       }
   ];
