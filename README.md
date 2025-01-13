@@ -19,7 +19,7 @@ A webring is a group of websites linked together in a circular or “ring” for
 
 ## How do I join?
 To add your website to **cswrecks**, you must be:
-- A **current student** or an **alum** of the [Georgia Tech College of Computing](https://www.cc.gatech.edu/) or be a GT Student/Alum heavily involved in hardware/software dev.
+- A **current student** or an **alum** of the [Georgia Tech College of Computing](https://www.cc.gatech.edu/) or be a startup founder in the tech/engineering space.
 - Committed to maintaining a personal website/portfolio (nothing inappropriate, please!).
 
 ### Steps
