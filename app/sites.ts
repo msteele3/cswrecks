@@ -38,6 +38,11 @@ export interface Site {
         website: "https://www.auwimo.com/"
       },
       {
+          name: "Noah Buchanan",
+          year: 2028,
+          website: "https://noahbuchanan.me"
+      },
+      {
         name: "Aidan Pratt",
         year: 2025,
         website: "https://aidanpratt.com/"
