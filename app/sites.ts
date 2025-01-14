@@ -55,11 +55,21 @@ export const allSites: Site[] = [
   {
     name: "Race Williams",
     year: 2026,
-    website: "https://raquent.in",
+    website: "https://raquent.in"
   },
   {
+    name: "Fabian Arevalo",
+    year: 2028,
+    website: "https://www.fabianarevalo.com/",
+  },
+  {
+    name: "Allen Su",
+    year: 2024,
+    website: "https://allensu.xyz",
+  },
+    {
     name: "Daniel Durling",
     year: 2028,
     website: "https://dgd.dev",
-  },
+  }
 ];
