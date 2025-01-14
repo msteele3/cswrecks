@@ -23,6 +23,11 @@ export const allSites: Site[] = [
     website: "https://ananthvivekanand.com/",
   },
   {
+    name: "Elliot Roe",
+    year: 2025,
+    website: "https://elliotbroe.com/",
+  },
+  {
     name: "Alex Wang",
     year: 2027,
     website: "https://www.alexwang.info/",
@@ -55,6 +60,11 @@ export const allSites: Site[] = [
   {
     name: "Fabian Arevalo",
     year: 2028,
-    website: "https://www.fabianarevalo.com/"
+    website: "https://www.fabianarevalo.com/",
+  },
+  {
+    name: "Allen Su",
+    year: 2024,
+    website: "https://allensu.xyz",
   }
 ];
