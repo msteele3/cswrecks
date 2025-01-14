@@ -66,7 +66,7 @@ export const allSites: Site[] = [
     name: "Allen Su",
     year: 2024,
     website: "https://allensu.xyz",
-  }
+  },
   {
     name: "Sid Krishnan",
     year: 2027,
