@@ -35,22 +35,22 @@ export const allSites: Site[] = [
   {
     name: "Varun Patel",
     year: 2027,
-    website: "https://www.bluehandcoding.com/"
+    website: "https://www.bluehandcoding.com/",
   },
   {
     name: "Austin Morris",
     year: 2024,
-    website: "https://www.auwimo.com/"
+    website: "https://www.auwimo.com/",
   },
   {
     name: "Noah Buchanan",
     year: 2028,
-    website: "https://noahbuchanan.me"
+    website: "https://noahbuchanan.me",
   },
   {
     name: "Aidan Pratt",
     year: 2025,
-    website: "https://aidanpratt.com/"
+    website: "https://aidanpratt.com/",
   },
   {
     name: "Race Williams",
@@ -71,5 +71,10 @@ export const allSites: Site[] = [
     name: "Sid Krishnan",
     year: 2027,
     website: "https://sidkrishnan.framer.website/",
+  },
+    {
+    name: "Daniel Durling",
+    year: 2028,
+    website: "https://dgd.dev",
   }
 ];
