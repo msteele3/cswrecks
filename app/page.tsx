@@ -100,17 +100,17 @@ export default function HomePage() {
           variants={container}
           initial="hidden"
           animate="show"
-          className="w-full max-w-4xl flex flex-col items-center px-4"
+          className="w-full max-w-4xl flex flex-col items-center"
         >
           {chunkedSites.map((rowSites, rowIndex) => (
             <div
               key={rowIndex}
-              className="flex flex-wrap xs:flex-nowrap gap-4 mb-6 justify-center s:mb-10 text-center"
+              className="flex flex-wrap xs:flex-nowrap gap-3 mb-6 justify-center s:mb-10 text-center"
             >
               {rowSites.map((site) => (
                 <motion.a
                   whileHover={{
-                    scale: 1.2,
+                    scale: 1.1,
                     transition: { duration: 0.25, ease: "easeInOut" },
                   }}
                   key={site.website}
@@ -118,10 +118,10 @@ export default function HomePage() {
                   href={site.website.replace(/\/$/, "")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 inline-block w-1/2 sm:w-auto text-md rounded-xl border sm:text-sm text-gray-300 hover:text-gray-100"
+                  className="p-2 inline-block w-fit text-md rounded-xl border sm:text-sm text-gray-300 hover:text-gray-100"
                 >
                   <span className="text-lg font-bold">{site.name}</span>
-                  <span className="ml-1 text-xs bg-transparent border p-0.5 rounded-full bg-blend-exclusion text-gray-300">
+                  <span className="hidden sm:inline ml-1 text-xs bg-transparent border p-0.5 rounded-full bg-blend-exclusion text-gray-300">
                     {site.year}
                   </span>
                   <br />
