@@ -7,6 +7,10 @@ export default {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      xs: "0.55rem;",
+      "5xl": "3rem;",
+    },
     extend: {
       colors: {
         background: "var(--background)",
