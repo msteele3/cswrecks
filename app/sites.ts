@@ -76,5 +76,35 @@ export const allSites: Site[] = [
     name: "Daniel Durling",
     year: 2028,
     website: "https://dgd.dev",
+  },
+  {
+    name: "Anant Khandelwal",
+    year: 2028,
+    website: "https://anantk2006.github.io/",
+  },
+  {
+    name: "Austin Huguenard",
+    year: 2026,
+    website: "https://www.austinhuguenard.com/",
+  },
+  {
+    name: "Nikhil Uppal",
+    year: 2024,
+    website: "https://nikhiluppal.com",
+  },
+  {
+    name: "Nawid Tahmid",
+    year: 2025,
+    website: "https://nawidtahmid.vercel.app/",
+  },
+  {
+    name: "Ishan Patel",
+    year: 2025,
+    website: "https://www.ishanpatel.dev/",
+  },
+  {
+    name: "Namkhang Le",
+    year: 2025,
+    website: "https://namkhangnle.github.io/",
   }
 ];
