@@ -111,5 +111,10 @@ export const allSites: Site[] = [
     name: "Andrew Boyer",
     year: 2026,
     website: "https://asboyer.com"
+  }, 
+  {
+    name: "Yaman Akbas",
+    year: 2026,
+    website: "https://yamanakbas.com/"
   }
 ];
