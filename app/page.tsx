@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Site, allSites } from "./sites";
+import "./page.css";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");
@@ -54,9 +55,12 @@ export default function HomePage() {
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
       style={{ fontFamily: "'Nova Square', sans-serif" }}
-      className="min-h-screen p-8 bg-gradient-to-tr from-yellow-200 to-blue-900 text-white transition-colors duration-300 flex items-center justify-center"
+      className="min-h-screen bg-gradient-to-tr from-yellow-200 to-blue-900 text-white transition-colors duration-300 flex items-center justify-center"
     >
-      <div className="flex flex-col items-center p-6 bg-black/10 rounded-xl">
+      <div
+        id="content-container"
+        className="flex flex-col items-center p-6 bg-black/10 rounded-xl"
+      >
         <section
           style={{}}
           className="w-full flex flex-col items-center justify-center text-center px-4"
@@ -100,7 +104,8 @@ export default function HomePage() {
           variants={container}
           initial="hidden"
           animate="show"
-          className="w-full max-w-4xl flex flex-col items-center"
+          className="w-full pt-2 overflow-scroll max-w-4xl flex flex-col items-center"
+          id="profile-container"
         >
           {chunkedSites.map((rowSites, rowIndex) => (
             <div
