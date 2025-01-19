@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Site, allSites } from "./sites";
-import "./page.css";
 
 export default function HomePage() {
   const [search, setSearch] = useState("");
@@ -54,19 +53,17 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
+      // Replaces `body { overflow: hidden; }` and `main { width: 100%; height: 100%; }`
+      className="w-full h-full min-h-screen bg-gradient-to-tr from-yellow-200 to-blue-900 text-white transition-colors duration-300 flex items-center justify-center"
       style={{ fontFamily: "'Nova Square', sans-serif" }}
-      className="min-h-screen bg-gradient-to-tr from-yellow-200 to-blue-900 text-white transition-colors duration-300 flex items-center justify-center"
     >
+      {/* Replaces #content-container { max-width: 950px; width: 80%; height: 80%; } */}
       <div
-        id="content-container"
-        className="flex flex-col items-center p-6 bg-black/10 rounded-xl"
+        className="max-w-[950px] w-4/5 h-4/5 flex flex-col items-center p-6 bg-black/10 rounded-xl"
       >
-        <section
-          style={{}}
-          className="w-full flex flex-col items-center justify-center text-center px-4"
-        >
-          <h1 className="text-5xl font-extrabold mb-4">CS Wrecks 🐝</h1>
-          <p className="text-lg max-w-2xl mx-auto pt-4">
+        <section className="w-full flex flex-col items-center justify-center text-center px-4">
+          <h1 className="text-[1.5rem] sm:text-5xl font-extrabold sm:mb-4">CS Wrecks 🐝</h1>
+          <p className="text-md max-w-2xl mx-auto pt-4">
             An unofficial directory of GT students and Alum&apos;s personal
             websites. Check them out, and feel free to add yours!
           </p>
@@ -76,7 +73,7 @@ export default function HomePage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
-          className="w-full max-w-2xl my-8 px-4"
+          className="w-full max-w-2xl my-2 sm:my-8 px-4"
         >
           <div className="relative">
             <input
@@ -100,12 +97,12 @@ export default function HomePage() {
           </div>
         </motion.div>
 
+        {/* Replaces #profile-container { height: 450px; } */}
         <motion.div
           variants={container}
           initial="hidden"
           animate="show"
-          className="w-full pt-2 overflow-scroll max-w-4xl flex flex-col items-center"
-          id="profile-container"
+          className="w-full pt-2 overflow-scroll max-w-4xl flex flex-col items-center h-[450px]"
         >
           {chunkedSites.map((rowSites, rowIndex) => (
             <div
@@ -126,7 +123,7 @@ export default function HomePage() {
                   className="p-2 inline-block w-fit text-md rounded-xl border sm:text-sm text-gray-300 hover:text-gray-100"
                 >
                   <span className="text-lg font-bold">{site.name}</span>
-                  <span className="hidden sm:inline ml-1 text-xs bg-transparent border p-0.5 rounded-full bg-blend-exclusion text-gray-300">
+                  <span className="hidden sm:inline ml-1 text-xs border p-0.5 rounded-full text-gray-300">
                     {site.year}
                   </span>
                   <br />
@@ -143,7 +140,7 @@ export default function HomePage() {
           ))}
         </motion.div>
 
-        <footer className="h-24 relative bottom-0 border-t w-full flex items-center justify-center">
+        <footer className="h-24 relative sm:absolute bottom-0 border-t w-full flex items-center justify-center">
           <div className="relative bottom-4 mt-10 flex gap-8">
             <motion.button
               whileHover={{
@@ -173,7 +170,7 @@ export default function HomePage() {
               onClick={() =>
                 window.open("https://github.com/msteele3/cswrecks", "_blank")
               }
-              className="text-lg sm:text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-white border-gray-300"
+              className="hidden sm:block text-lg sm:text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-white border-gray-300"
             >
               view source code →
             </motion.button>

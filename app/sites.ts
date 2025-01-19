@@ -23,6 +23,16 @@ export const allSites: Site[] = [
     website: "https://ananthvivekanand.com/",
   },
   {
+    name: "Carter Cote",
+    year: 2024,
+    website: "https://www.cartercote.com/"
+  },
+  {
+    name: "Vikranth Keerthipati",
+    year: 2024,
+    website: "https://vikranth.dev/"
+  },
+  {
     name: "Elliot Roe",
     year: 2025,
     website: "https://elliotbroe.com/",
@@ -36,6 +46,11 @@ export const allSites: Site[] = [
     name: "Varun Patel",
     year: 2027,
     website: "https://www.bluehandcoding.com/",
+  },
+  {
+    name: "Ayush Pai",
+    year: 2026,
+    website: "https://ayush.cc/"
   },
   {
     name: "Austin Morris",
@@ -93,11 +108,6 @@ export const allSites: Site[] = [
     website: "https://nikhiluppal.com",
   },
   {
-    name: "Nawid Tahmid",
-    year: 2025,
-    website: "https://nawidtahmid.vercel.app/",
-  },
-  {
     name: "Ishan Patel",
     year: 2025,
     website: "https://www.ishanpatel.dev/",
@@ -121,5 +131,16 @@ export const allSites: Site[] = [
     name: "Neil Patel",
     year: 2025,
     website: "https://n3ilpat3l.github.io"
-  }
+  },
+  {
+    name: "Sai Anoop",
+    year: 2025,
+    website: "https://saianoop.pythonanywhere.com/"
+  },
+  {
+    name: "Nawid Tahmid",
+    year: 2025,
+    website: "https://nawidtahmid.vercel.app/",
+  },
+
 ];
