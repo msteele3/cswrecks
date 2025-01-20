@@ -17,7 +17,7 @@ export default function HomePage() {
   });
 
   function chunkSites(sites: Site[]) {
-    const chunkPattern = [4, 5];
+    const chunkPattern = [3, 4];
     const result: Site[][] = [];
     let index = 0;
     let i = 0;
@@ -62,8 +62,8 @@ export default function HomePage() {
         className="max-w-[950px] w-4/5 h-4/5 flex flex-col items-center p-6 bg-black/10 rounded-xl"
       >
         <section className="w-full flex flex-col items-center justify-center text-center px-4">
-          <h1 className="text-[1.5rem] sm:text-5xl font-extrabold sm:mb-4">CS Wrecks 🐝</h1>
-          <p className="text-md max-w-2xl mx-auto pt-4">
+          <h1 className="text-[1.5rem] sm:text-5xl font-extrabold sm:mb-2">CS Wrecks 🐝</h1>
+          <p className="text-md max-w-2xl mx-auto pt-2">
             An unofficial directory of GT students and Alum&apos;s personal
             websites. Check them out, and feel free to add yours!
           </p>
@@ -97,12 +97,11 @@ export default function HomePage() {
           </div>
         </motion.div>
 
-        {/* Replaces #profile-container { height: 450px; } */}
         <motion.div
           variants={container}
           initial="hidden"
           animate="show"
-          className="w-full pt-2 overflow-scroll max-w-4xl flex flex-col items-center h-[450px]"
+          className="w-full pt-2 overflow-scroll max-w-4xl flex flex-col items-center h-[365px]"
         >
           {chunkedSites.map((rowSites, rowIndex) => (
             <div
@@ -140,7 +139,7 @@ export default function HomePage() {
           ))}
         </motion.div>
 
-        <footer className="h-24 relative sm:absolute bottom-0 border-t w-full flex items-center justify-center">
+        <footer className="h-24 relative sm:absolute bottom-0 w-full flex items-center justify-center">
           <div className="relative bottom-4 mt-10 flex gap-8">
             <motion.button
               whileHover={{
