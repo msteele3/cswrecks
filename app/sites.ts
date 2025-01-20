@@ -53,6 +53,11 @@ export const allSites: Site[] = [
     website: "https://www.bluehandcoding.com/",
   },
   {
+    name: "Akshay Narisetti",
+    year: 2024,
+    website: "https://www.akshaynarisetti.com/"
+  },
+  {
     name: "Ayush Pai",
     year: 2026,
     website: "https://ayush.cc/"
