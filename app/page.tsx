@@ -17,7 +17,7 @@ export default function HomePage() {
   });
 
   function chunkSites(sites: Site[]) {
-    const chunkPattern = [3, 4];
+    const chunkPattern = [4, 4];
     const result: Site[][] = [];
     let index = 0;
     let i = 0;

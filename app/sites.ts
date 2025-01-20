@@ -28,6 +28,11 @@ export const allSites: Site[] = [
     website: "https://www.cartercote.com/"
   },
   {
+    name: "Yatharth Bhargava",
+    year: 2025,
+    website: "https://www.yatharth.dev/"
+  },
+  {
     name: "Vikranth Keerthipati",
     year: 2024,
     website: "https://vikranth.dev/"
