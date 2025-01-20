@@ -157,4 +157,9 @@ export const allSites: Site[] = [
     year: 2023,
     website: "https://nelsonrodriguez.me",
   },
+  {
+    name: "Adarsh Kumar",
+    year: 2025,
+    website: "https://akxcix.com",
+  },
 ];
