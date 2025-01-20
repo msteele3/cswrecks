@@ -53,11 +53,9 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      // Replaces `body { overflow: hidden; }` and `main { width: 100%; height: 100%; }`
       className="w-full h-full min-h-screen bg-gradient-to-tr from-yellow-200 to-blue-900 text-white transition-colors duration-300 flex items-center justify-center"
       style={{ fontFamily: "'Nova Square', sans-serif" }}
     >
-      {/* Replaces #content-container { max-width: 950px; width: 80%; height: 80%; } */}
       <div
         className="max-w-[950px] w-4/5 h-4/5 flex flex-col items-center p-6 bg-black/10 rounded-xl"
       >
