@@ -142,5 +142,9 @@ export const allSites: Site[] = [
     year: 2025,
     website: "https://nawidtahmid.vercel.app/",
   },
-
+  {
+    name: "Nelson Rodriguez",
+    year: 2023,
+    website: "https://nelsonrodriguez.me",
+  },
 ];
