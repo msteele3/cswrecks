@@ -53,7 +53,7 @@ export default function HomePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
-      className="w-full h-full min-h-screen bg-gradient-to-tr from-yellow-200 to-blue-900 text-white transition-colors duration-300 flex items-center justify-center"
+      className="w-full h-full min-h-screen bg-gradient-to-tr from-yellow-200 to-gray-800 text-white transition-colors duration-300 flex items-center justify-center"
       style={{ fontFamily: "'Nova Square', sans-serif" }}
     >
       <div
@@ -117,9 +117,15 @@ export default function HomePage() {
                   href={site.website.replace(/\/$/, "")}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="p-2 inline-block w-fit text-md rounded-xl border sm:text-sm text-gray-300 hover:text-gray-100"
+                  className="flex items-center h-16 p-2  w-fit text-md rounded-xl border sm:text-sm text-gray-300 hover:text-gray-100"
                 >
-                  <span className="text-lg font-bold">{site.name}</span>
+                  <div className="flex h-full align-middle items-center ">
+                  {/*add to top: pr-2, One day this will be used to show icons for people, for now is blank. If you find this in the codebase submit a PR with your styling to suggest this feature */}
+
+
+                  </div>
+                  <div className="inline-block"
+                  >  <span className="text-lg font-bold">{site.name}</span>
                   <span className="hidden sm:inline ml-1 text-xs border p-0.5 rounded-full text-gray-300">
                     {site.year}
                   </span>
@@ -130,7 +136,8 @@ export default function HomePage() {
                       .replace("http://", "")
                       .replace(/^www\./, "")
                       .replace(/\/$/, "")}
-                  </span>
+                  </span></div>
+                
                 </motion.a>
               ))}
             </div>
