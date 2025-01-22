@@ -161,5 +161,26 @@ export const allSites: Site[] = [
     name: "Adarsh Kumar",
     year: 2025,
     website: "https://akxcix.com",
+  }, 
+  {
+    name: "John Wright",
+    year: 2025,
+    website: "https://jwstanly.com/"
   },
+  {
+    name: "Avirath Tibrewala",
+    year: 2025,
+    website: "https://www.avirathtibrewala.xyz/"
+  }, 
+  {
+    name: "Mehul Rastogi",
+    year: 2025,
+    website: "https://www.mehulrastogi.com/"
+  },
+  {
+    name: "Tawsif Kamal",
+    year: 2025,
+    website: "https://www.tawsifkamal.com/"
+  }
+
 ];
