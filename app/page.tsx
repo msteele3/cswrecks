@@ -57,7 +57,7 @@ export default function HomePage() {
       style={{ fontFamily: "'Nova Square', sans-serif" }}
     >
       <div
-        className="max-w-[950px] w-4/5 h-4/5 flex flex-col items-center p-6 bg-black/10 rounded-xl"
+        className="max-w-[950px] w-4/5 h-4/5 pt-16 m-2 lg:m-16 flex flex-col items-center  bg-black/10 rounded-xl"
       >
         <section className="w-full flex flex-col items-center justify-center text-center px-4">
           <h1 className="text-[1.5rem] sm:text-5xl font-extrabold sm:mb-2">CS Wrecks 🐝</h1>
@@ -66,6 +66,40 @@ export default function HomePage() {
             websites. Check them out, and feel free to add yours!
           </p>
         </section>
+        <div className="relative bottom-4 mt-10 flex gap-8">
+            <motion.button
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.15 },
+              }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              onClick={() =>
+                window.open(
+                  "https://github.com/msteele3/cswrecks/pulls",
+                  "_blank",
+                )
+              }
+              className="text-lg sm:text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-white border-gray-300"
+            >
+              add your site →
+            </motion.button>
+
+            <motion.button
+              whileHover={{
+                scale: 1.15,
+                transition: { duration: 0.15 },
+              }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              onClick={() =>
+                window.open("https://github.com/msteele3/cswrecks", "_blank")
+              }
+              className="hidden sm:block text-lg sm:text-sm px-6 py-2 max-h-min rounded-full border transition-colors duration-200 text-white border-gray-300"
+            >
+              view source code →
+            </motion.button>
+          </div>
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -99,7 +133,7 @@ export default function HomePage() {
           variants={container}
           initial="hidden"
           animate="show"
-          className="w-full pt-2 overflow-scroll max-w-4xl flex flex-col items-center h-[365px]"
+          className="w-full pt-2 overflow-x-auto max-w-4xl flex flex-col items-center h-[365px]"
         >
           {chunkedSites.map((rowSites, rowIndex) => (
             <div
@@ -145,40 +179,7 @@ export default function HomePage() {
         </motion.div>
 
         <footer className="h-24 relative sm:absolute bottom-0 w-full flex items-center justify-center">
-          <div className="relative bottom-4 mt-10 flex gap-8">
-            <motion.button
-              whileHover={{
-                scale: 1.15,
-                transition: { duration: 0.15 },
-              }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              onClick={() =>
-                window.open(
-                  "https://github.com/msteele3/cswrecks/pulls",
-                  "_blank",
-                )
-              }
-              className="text-lg sm:text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-white border-gray-300"
-            >
-              add your site →
-            </motion.button>
-
-            <motion.button
-              whileHover={{
-                scale: 1.15,
-                transition: { duration: 0.15 },
-              }}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              onClick={() =>
-                window.open("https://github.com/msteele3/cswrecks", "_blank")
-              }
-              className="hidden sm:block text-lg sm:text-sm px-6 py-2 rounded-full border transition-colors duration-200 text-white border-gray-300"
-            >
-              view source code →
-            </motion.button>
-          </div>
+         
         </footer>
       </div>
     </motion.main>
