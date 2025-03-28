@@ -192,10 +192,15 @@ export const allSites: Site[] = [
     year: 2027,
     website: "https://www.jeetdekivadia.co/"
   },
-	{
-		name: "Vignesh Suresh Kumar",
-		year: 2026,
-		website: "https://vigneshsk17.github.io/"
-	}
+{
+	name: "Vignesh Suresh Kumar",
+	year: 2026,
+	website: "https://vigneshsk17.github.io/"
+},
+{
+  name: "Shreyas Gadagi",
+  year: 2026, // e.g., graduation year
+  website: "https://shreyasgadagi.vercel.app/"
+}
 
 ];
